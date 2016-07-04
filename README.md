@@ -33,10 +33,15 @@ AppDelegate启动程序的时候，需要初始化该视图：
 
 3.使用方法
   NeteaseShareContent *shareContent = [[NeteaseShareContent alloc] init];
+  
     shareContent.dataType = NeteaseShareContentTypeWebpage;
+    
     shareContent.title = self.callshareModel.share_title;
+    
     shareContent.desc = self.callshareModel.share_content;
+    
     shareContent.thumbnailData = UIImagePNGRepresentation(kShareImage);
+    
     shareContent.webpageUrl = self.callshareModel.share_url;
     
     [[NeteaseShare sharedInstance] shareFromViewController:self content:shareContent fullCompletion:^(NeteaseShareSocialSNSType socialType, NeteaseShareResponseState responseState, NSString *errorMessage) {
