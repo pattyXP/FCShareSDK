@@ -4,6 +4,7 @@
 
 
 AppDelegate启动程序的时候，需要初始化该视图：
+
 1.- (void)initShareView
 {
     //初始化工作---------------------begin--------------------
@@ -15,6 +16,7 @@ AppDelegate启动程序的时候，需要初始化该视图：
     //step 2 初始化UI接口
     [[NeteaseShare sharedInstance] initShareView];
 }
+
 
 2.以及在下面方法添加这句话
 - (BOOL)handlerOpenURL:(NSURL *)url {
