@@ -7,14 +7,21 @@ AppDelegate启动程序的时候，需要初始化该视图：
 
 1.- (void)initShareView
 {
+
     //初始化工作---------------------begin--------------------
+    
     //step 1 注册应用appID
+    
     [[NeteaseShare sharedInstance] setAppkey:kWeChatAppId type:NeteaseShareWeChat];
+    
     [[NeteaseShare sharedInstance] setAppkey:kWeiboAppKey type:NeteaseShareWeibo];
+    
     [[NeteaseShare sharedInstance] setAppkey:kTencentAppId type:NeteaseShareQQ];
     
     //step 2 初始化UI接口
+    
     [[NeteaseShare sharedInstance] initShareView];
+    
 }
 
 
